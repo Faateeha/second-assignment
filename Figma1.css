@@ -1,0 +1,411 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*normal css*/
+  .container {
+    display: flex;
+    background-color: #F7FDFC;
+    width: 1440px;
+    height: 840px;
+    border: 2px solid black;
+    padding-inline: 200px;
+    
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    
+  }
+
+  .box1 {
+    width: 460px;
+    height: 275px;
+    padding-top: 205px;
+    margin-left: 100px;
+  }
+
+  .logo {
+    width: 77.33px;
+    height: 80px;
+    top: 205px;
+    left: 140px;
+ }
+
+ #pt {
+    width: 268px;
+    height: 50px;
+    top: 335px;
+    left: 140px;
+    color: hsla(174, 100%, 2%, 1);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+    font-family: "poppins", sans-serif;
+}
+
+p {
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(115, 115, 115, 1);
+    font-family: "poppins", sans-serif;
+    display: block;
+   
+
+}
+.mobile {
+  display: none;
+}
+ 
+
+
+
+
+.box2 {
+    width: 580px;
+    height: 580px;
+    margin-top: 81px;
+    margin-left: 70px;
+    margin-right: 50px;
+    padding: 30px;
+    box-shadow: rgba(4, 8, 19, 0.1);
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+
+button {
+    width: 500px;
+    height: 48px;
+    background-color: rgba(46, 196, 182, 1);
+    color: white;
+    margin-top: 15px;
+}
+
+#pgh {
+    width: 463px;
+    height: 25px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 12px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+a {
+    color: rgba(46, 196, 182, 1);
+    font-weight: 500;
+}
+    
+label {
+    width: 238px;
+    height: 16px;
+    font-style: bold;
+    font-family: "poppins", sans-serif ;
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+.group {
+    width: 238px; /* Adjust as needed to leave some space between pairs */
+    margin-bottom: 16px;
+    height: 72px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 17px;
+}
+
+.group2 {
+    width: 238px; /* Adjust as needed to leave some space between pairs */
+    height: 72px;
+    margin-bottom: 16px;
+    display: inline-flex;
+    flex-direction: column;
+   
+}
+
+
+.group input {
+    width: 238px;
+    padding: 8px;
+
+}
+
+.group2 input {
+    width: 238px;
+    padding: 8px;
+    
+
+}
+
+
+.password input {
+    width: 500px;
+    height: 48px;
+    margin-left: -20px
+ 
+}
+
+.password {
+    position: relative;
+    margin-bottom: 8px;
+    .fa {
+        position: relative;
+        left: 470px;
+        width: 16px;
+        height: 16px;
+    
+      }
+    
+}
+
+
+    
+
+
+.activity select {
+    width: 500px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+
+.group label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.group2 label{
+    display: block;
+    margin-bottom: 4px;
+    
+}
+
+.group select {
+    width: 238px;
+    height: 48px;
+}
+
+@media(max-width:375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7FDFC;
+    width: 375px;
+    height: 1924px;
+    border: 2px solid black;
+    
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: -150px;
+    margin-left: -250px;
+  }
+
+  .box2 {
+    width: 327px;
+    height: 870px;
+    margin-top: 140px;
+    box-shadow: rgba(4, 8, 19, 0.1);
+    background-color: white;
+    border-radius: 6px;
+    display: block;
+
+}
+
+label {
+  width: 238px;
+  height: 16px;
+  font-style: bold;
+  font-family: "poppins", sans-serif ;
+  font-weight: 600px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.group {
+  width: 238px; /* Adjust as needed to leave some space between pairs */
+  margin-bottom: 16px;
+  height: 72px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.group2 {
+  width: 238px; /* Adjust as needed to leave some space between pairs */
+  height: 72px;
+  margin-bottom: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  
+}
+
+
+.group input {
+  width: 295px;
+  height: 48px;
+  padding: 8px;
+
+}
+
+.group2 input {
+  width: 295px;
+  height: 48px;
+  
+  
+
+}
+
+
+.password input {
+  width: 295px;
+  height: 48px;
+  margin-top: -30px;
+  margin-left: -1px;
+  
+
+}
+
+.password {
+  position: relative;
+  margin-bottom: 8px;
+  .fa {
+      position: relative;
+      top: 20px;
+      left: 250px;
+      width: 16px;
+      height: 16px;
+  
+    }
+  
+}
+
+
+  
+
+
+.activity select {
+  width: 295px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+
+.group label{
+  display: block;
+  margin-bottom: 4px;
+  width: 295px;
+  height: 48px;
+}
+
+.group2 label{
+  display: block;
+  margin-bottom: 4px;
+  width: 295px;
+  height: 48px;
+
+  
+}
+
+.group select {
+  width: 295px;
+  height: 48px;
+  
+}
+
+button {
+  width: 295px;
+  height: 48px;
+  background-color: rgba(46, 196, 182, 1);
+  color: white;
+  margin-top: 15px;
+}
+
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+  width: 327px;
+  font-size: 16px;
+  color: #737373;
+  font-weight: 300;
+}
+
+#pgh {
+  width: 295px;
+  height: 25px;
+  font-weight: 400;
+  font-family: "poppins", sans-serif;
+  font-size: 12px; 
+  text-align: center;
+}
+
+
+}
+
+
+  
