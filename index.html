@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First figma</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:wght@300&display=swap");
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Figma1.css" />
+  <body>
+    <div class="container">
+      <div class="wrapper">
+      <div class="box1">
+        <img src="Logo.png" alt="logo" class="logo" />
+        <p id="pt">For Individuals</p>
+        <p class="desktop">
+          Start benefitting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p class="mobile">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+      </div>
+      <div class="box2">
+        <form class="form" action="required" method="post">
+          <div class="group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="text" value="tolu"/>
+          </div>
+          <div class="group2">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="text" />
+          </div>
+          <div class="group">
+            <label for="gender">Gender</label>
+            <select name="gender">
+              <option value="">Select here</option>
+              <option value="female">female</option>
+              <option value="male">male</option>
+            </select>
+          </div>
+          <div class="group2">
+            <label for="date-of-birth">Date of Birth</label>
+            <input type="date" placeholder="Select here">
+          </div>
+          <div class="group">
+            <label for="weight">Weight(KG)</label>
+            <input type="number" name="number" placeholder="Enter Weight" />
+          </div>
+          <div class="group2">
+            <label for="height">Height(CM)</label>
+            <input type="number"name="number"placeholder="Enter height here.."/>
+          </div>
+          <div class="activity">
+            <label for="Activity-level">Activity Level</label>
+            <select name="number">
+              <option value="">select here</option>
+            </select>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <i class="fa fa-eye"></i>
+            <input type="password" required>
+            
+          </div>
+          <button>Register</button>
+          <p id="pgh">
+            By clicking Register, you agree to our
+            <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
